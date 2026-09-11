@@ -13,13 +13,13 @@ int main()
     for (int i=0;i<N;i++) {
         for (int j=i+1;j<N;j++) {
             if (nums[i]+nums[j]==target) {
-                printf("%d %d\n",i,j);
+                printf("Pair found(%d,%d)\n",nums[i],nums[j]);
                 k=1;
             }
         }
     }
     if (k==0) {
-        printf("No two sum found\n");
+        printf("Pair not found\n");
     }
     return 0;
 }
